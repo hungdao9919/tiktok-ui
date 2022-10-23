@@ -7,10 +7,10 @@
     display: flex;
     width: var(--default-layout-width);
     min-height: 1000px;
-    background-color: #333;
+    padding: 0 var(--default-layout-horizontal-spacer);
 }
 .content {
     flex: 1;
-    background-color: #ccf;
+    background-color: rgb(174, 174, 179);
     min-height: 1000px;
 }

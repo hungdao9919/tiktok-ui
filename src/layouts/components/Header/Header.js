@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 
+import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
@@ -20,7 +21,8 @@ import { MessageIcon } from '~/Components/Icons';
 import Image from '~/Components/Image';
 import Menu from '~/Components/Popper/Menu';
 import styles from './Header.module.scss';
-import Search from '~/Components/Layout/Search';
+import Search from '~/layouts/Search';
+import config from '~/configs';
 
 const cx = classNames.bind(styles);
 
@@ -110,7 +112,9 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="tiktok"></img>
+                    <Link to={config.routes.home} className={cx('logo-link')}>
+                        <img src={images.logo} alt="tiktok"></img>
+                    </Link>
                 </div>
                 {/* {Search bar} */}
                 <Search />

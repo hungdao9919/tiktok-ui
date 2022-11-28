@@ -1,4 +1,4 @@
 function Home() {
-    return <h1>Homage page</h1>;
+    return <h1 style={{ height: 2000 }}>Homage page</h1>;
 }
 export default Home;

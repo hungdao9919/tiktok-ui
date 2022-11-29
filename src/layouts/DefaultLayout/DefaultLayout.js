@@ -3,7 +3,7 @@ import styles from './DefaultLayout.module.scss';
 import classNames from 'classnames/bind';
 
 import Header from '~/layouts/components/Header';
-import Sidebar from './SideBar';
+import Sidebar from '~/layouts/components/SideBar';
 const cx = classNames.bind(styles);
 
 function Defaultlayout({ children }) {

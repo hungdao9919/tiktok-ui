@@ -1,0 +1,136 @@
+.wrapper {
+    padding: 16px 0;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 0;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+}
+.lable {
+    padding: 0 8px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: #161823bf;
+    font-weight: 600;
+}
+.account-item {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    transition: background-color ease-in-out 200ms;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+.check-icon {
+    width: 14px;
+    height: 20px;
+    color: rgb(32, 213, 236);
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.item-info {
+    & i {
+        font-size: 1rem;
+    }
+}
+.nickname {
+    font-size: 1.6rem;
+    line-height: 22px;
+}
+.name {
+    font-size: 1.2rem;
+    color: #161823bf;
+    line-height: 15px;
+}
+.see-more-btn {
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 8px;
+    color: var(--primary);
+    &:hover {
+        cursor: pointer;
+    }
+}
+.profile-details {
+    position: relative;
+    box-sizing: border-box;
+    width: 320px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 12px;
+}
+.profile-avatar {
+    height: 44px;
+    width: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-follow-btn {
+    align-self: center;
+}
+
+.profile-nickname {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 22px;
+    font-weight: 700;
+    color: rgba(22, 24, 35, 1);
+}
+.profile-check-icon {
+    width: 14px;
+    height: 20px;
+    color: rgb(32, 213, 236);
+    margin-left: 4px;
+    line-height: 20px;
+}
+.profile-displayname {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 1);
+}
+.profile-statistics {
+    margin-top: 8px;
+}
+.profile-follower-quantity,
+.profile-like-quantity {
+    margin-right: 6px;
+    font-size: 1.7rem;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgba(22, 24, 35, 1);
+}
+.profile-follower-label,
+.profile-like-label {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.profile-follower-label {
+    margin-right: 12px;
+}
